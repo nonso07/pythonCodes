@@ -47,9 +47,9 @@ def playGam(wordBank):
     while(play.numOfPlayer>Counter):
          #print(guessWord, play.hintDiscription[hintOfWord], arryWordBank) # uncommect to hack the game
          print("Player",Counter)
+         print(str(guessWord.upper()))
          inputGuess= input("Write in the full spelling of the guess word: ")
-         print(guessWord.capitalize())
-         if inputGuess==guessWord or inputGuess== guessWord.capitalize() or inputGuess==guessWord.upper():
+         if inputGuess==guessWord or inputGuess== str(guessWord.capitalize()) or inputGuess== str(guessWord).upper():
               print("Congratulation!!! you win ")
               break
          else:
